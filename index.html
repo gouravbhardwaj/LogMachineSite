@@ -1,0 +1,560 @@
+<html>
+    <!-- http://themes.3rdwavemedia.com/-->
+    <head>
+        <title>LM - Log Machine</title>
+        <!-- Meta -->
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content=""/>                                        
+        <meta name="author" content=""/>    
+        <link rel="shortcut icon" href="favicon.ico"/>  
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'/>
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'/> 
+        <!-- Global CSS -->
+        
+        
+        <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css"/>
+        <!-- Plugins CSS -->    
+        <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css"/>
+        <link rel="stylesheet" href="assets/plugins/prism/prism.css"/>
+        <!-- Theme CSS -->  
+        <link id="theme-style" rel="stylesheet" href="assets/css/styles.css"/>
+        
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+        
+        <style>
+         
+            
+            
+        
+            .featureImage{
+            
+            border-radius : 100%;
+            }
+            
+            .featureContent{
+            margin-top: 40px;
+            }
+            
+            .license {
+            padding: 0px !important;
+            }
+            
+            .sub-title{
+            margin-left: 13px; 
+            }
+            
+            .list-unstyled li{
+            
+            display:inline-grid;
+            }
+            
+            .getStartedGIF {
+            width: 100%;
+            }
+            
+            .logmachineWallpaper{
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: 67% 323px;
+            background-image: url(/LogMachine/resource/1492237619000/crontec__LogMachineAsset/assets/images/LogWallpaper.jpg);
+            }
+            
+            #mailButton{
+            width: 47px;
+            height: 47px;
+            border-radius: 100%;
+            background: #0c86ae;
+            border: none;
+            color: white;
+            }
+            
+            .promo .intro {
+            margin-bottom: 85px;
+            }
+            
+            .fa-envelope{
+                 font-size: 22px;
+            }
+            
+             @media (max-width: 767px)
+            {
+           #mailButton {
+            width: 36px;
+            height: 36px;
+            padding-top: 7px;
+            margin-right: 2px;
+            }
+            
+            .fa-envelope{
+                 font-size: 16px;
+            }
+            }
+        </style>
+        
+    </head> 
+    
+    <body data-spy="scroll">
+        
+        <!---//Facebook button code-->
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+        
+        <!-- ******HEADER****** --> 
+        <header id="header" class="header">  
+            <div class="container">            
+                <h1 class="logo pull-left">
+                    <a class="scrollto" href="#promo">
+                        <span class="logo-title">LogMachine</span>
+                    </a>
+                </h1><!--//logo-->              
+                <nav id="main-nav" class="main-nav navbar-right" role="navigation">
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button><!--//nav-toggle-->
+                    </div><!--//navbar-header-->            
+                    <div class="navbar-collapse collapse" id="navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active nav-item sr-only"><a class="scrollto" href="#promo">Home</a></li>
+                            <li class="nav-item"><a class="scrollto" href="#about">About</a></li>
+                            <li class="nav-item"><a class="scrollto" href="#features">Features</a></li> 
+                            <li class="nav-item"><a class="scrollto" href="#docs">Get Started</a></li>
+                            <!-- <li class="nav-item"><a class="scrollto" href="#license">License</a></li>  -->                      
+                            <li class="nav-item"><a class="scrollto" style="color:#0a7396" href="#contact">Contact</a></li>
+                        </ul><!--//nav-->
+                    </div><!--//navabr-collapse-->
+                </nav><!--//main-nav-->
+            </div>
+        </header><!--//header-->
+        
+        <!-- ******PROMO****** -->
+        <section id="promo" class="promo section offset-header logmachineWallpaper">
+            <div class="container text-center">
+                <h2 class="title">Log<span class="highlight">Machine</span></h2>
+                <p class="intro">An efficient and time saving Log analysis tool for your Salesforce Org. </p>
+                <div class="btns">
+                    <a class="btn btn-cta-secondary" href="https://chrome.google.com/webstore/detail/logmachine/ngppecjgpbgmfcjjakdjfbnpnihcgpdb" target="_blank">Demo</a>
+                    <a class="btn btn-cta-primary" href="https://chrome.google.com/webstore/detail/logmachine/ngppecjgpbgmfcjjakdjfbnpnihcgpdb" target="_blank">Download</a>
+                </div>
+                
+                
+                <ul class="meta list-inline">
+                    <!--   <li><a href="https://github.com/xriley/devAid-Theme" target="_blank">View on GitHub</a></li> -->
+                    <li><a href="http://themes.3rdwavemedia.com/website-templates/devaid-free-bootstrap-theme-developers/" target="_blank">Full Documentation</a></li>
+                    <li>Created by: <a href="http://themes.3rdwavemedia.com/" target="_blank">Gourav Bhardwaj</a> at NoMansLand</li>
+                </ul><!--//meta-->
+                
+                
+                
+            </div><!--//container-->
+            <div class="social-media">
+                <div class="social-media-inner container text-center">
+                    
+                    
+                    
+                    <ul class="list-inline">
+                        <!-- <li class="twitter-follow"><a href="https://twitter.com/3rdwave_themes" class="twitter-follow-button" data-show-count="false">Follow @3rdwave_themes</a>
+</li> 
+<li class="twitter-tweet">
+<a href="https://twitter.com/share" class="twitter-share-button" data-via="3rdwave_themes" data-hashtags="bootstrap">Tweet</a>
+
+</li>-->
+                        <!--   <li class="facebook-like">
+<div class="fb-like" data-href="http://themes.3rdwavemedia.com/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+</li>--><!--//facebook-like-->
+                        <!--// Generate github buttons: https://github.com/mdo/github-buttons -->
+                        <!--    <li class="github-star"><iframe src="http://ghbtns.com/github-btn.html?user=mdo&repo=github-buttons&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe></li>-->
+                        <!--    <li class="github-fork"><iframe src="http://ghbtns.com/github-btn.html?user=mdo&repo=github-buttons&type=fork" allowtransparency="true" frameborder="0" scrolling="0" width="53" height="20"></iframe></li> -->
+                        <!--//
+<li class="github-follow"><iframe src="http://ghbtns.com/github-btn.html?user=mdo&type=follow&count=true"
+allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"></iframe></li>
+-->
+                    </ul> 
+                    
+                </div>
+            </div>
+        </section><!--//promo-->
+        
+        <!-- ******ABOUT****** --> 
+        <section id="about" class="about section">
+            <div class="container">
+                <h2 class="title text-center">What is LogMachine?</h2>
+                <p class="intro text-center">This plugin is for Salesforce debug log, it will help in analyzing the log efficiently by highlighting key important sections in the log and also giving help tips to avoid error.</p>
+                <div class="row">
+                    <div class="item col-md-4 col-sm-6 col-xs-12">
+                        <div class="icon-holder">
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <div class="content">
+                            <h3 class="sub-title">Designed for developers</h3>
+                            <p>
+                                The Plugin is Designed specially keeping Developers in mind, with the current state Salesforce Debug Log its difficult to readout the content and find out meaningful content out of it. This Plugin makes the content visible by changing the content color and font styling, also with the dark blue background in place the Log Context is easily readable.
+                            </p>
+                        </div><!--//content-->
+                    </div><!--//item-->
+                    <div class="item col-md-4 col-sm-6 col-xs-12">
+                        <div class="icon-holder">
+                            <i class="fa fa-clock-o"></i>
+                        </div>
+                        <div class="content">
+                            <h3 class="sub-title">Time saver</h3>
+                            <p>
+                                With the Log Contents highlighted in different indexing colors, its very easy to find what you are looking for. For example for User_Debugs the contents are highlighted with White Background. The Method Entry is now Clickable, simply click on the Method Entry and it opens the class in new Tab Highlighting the Method.  
+                            </p>
+                        </div><!--//content-->
+                    </div><!--//item-->
+                    <div class="item col-md-4 col-sm-6 col-xs-12">
+                        <div class="icon-holder">
+                            <i class="fa fa-crosshairs"></i>
+                        </div>
+                        <div class="content">
+                            <h3 class="sub-title">UX-centred</h3>
+                            <p>
+                                Its developed keeping in mind the Color combination that suits the most for a Debug Context, like RED for Errors, WHITE for User Debugs, BLUE for Variable Assignments. The UX is designed keeping in mind the some of the most loved open source IDEs.
+                            </p>
+                        </div><!--//content-->
+                    </div><!--//item-->   
+                    
+                    
+                    
+                    
+                    
+                </div><!--//row-->            
+            </div><!--//container-->
+        </section><!--//about-->
+        
+        <!-- ******FEATURES****** --> 
+        <section id="features" class="features section">
+            <div class="container text-center">
+                <h2 class="title">Features</h2>
+                
+                <div class="row">
+                    <div class="col-lg-4">
+                        
+                        <img class="featureImage" src="assets/images/LogFeature1.jpg"/>  
+                        <div class="featureContent">
+                            <i class="fa fa-check"></i>   The Color Pallete is the Color Index which lets it easy to identify the color which represents a specific Log Context. 
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <img  class="featureImage" src="assets/images/LogFeature2.jpg"/>
+                        <div  class="featureContent">
+                            <i class="fa fa-check"></i>  The Method Entry in the Log is Clickable, you can lick on the Method Name 
+                            and the Apex Class opens in a new Tab with the Method Reference Highlited.
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <img  class="featureImage" src="assets/images/LogFeature3.jpg"/>
+                        <div  class="featureContent">
+                            <i class="fa fa-check"></i>  The Log Summary is Highlited in GREEN (for Success) and RED (for Failure) to easily distinguish. 
+                            You don't need to read the Status Message every time a new Log is created.  
+                        </div>
+                    </div>
+                    
+                </div>
+            </div><!--//container-->
+        </section><!--//features-->
+        
+        <!-- ******DOCS****** --> 
+        <section id="docs" class="docs section">
+            <div class="container">
+                <div class="docs-inner">
+                    <h2 class="title text-center">Get Started</h2> 
+                    <br/>
+                    <br/>
+                    <div class="block">
+                        
+                        
+                        
+                        <div class="row">
+                            <h3 class="sub-title text-center">Step 1</h3>
+                            <br/>
+                            <br/>
+                            <div class="col-lg-4">
+                                
+                                <img  class="getStartedGIF" src="assets/images/LogMachineSearch.gif"/>
+                            </div>
+                            
+                            <div class="col-lg-8">
+                                Click on the <a href="https://chrome.google.com/webstore/detail/logmachine/ngppecjgpbgmfcjjakdjfbnpnihcgpdb">Link</a>
+                                or navigate to <a href="https://chrome.google.com/webstore/category/extensions"> Chrome Webstore </a> and type LogMachine in the Search Store Box to search for the Plugin.
+                                <br/>
+                                
+                            </div>
+                        </div>
+                        
+                        <br/>
+                        
+                        <div class="row">
+                            <h3 class="sub-title text-center">Step 2</h3>
+                            <br/>
+                            <br/>
+                            <div class="col-lg-4">
+                                
+                                The Plugin appears in the left hand side of the Search Result Click on Add to Chrome Button to Download it to your browser.
+                                Click Accept if a Popup appears for approval.
+                            </div>
+                            
+                            <div class="col-lg-8">
+                                
+                                
+                                <img  class="getStartedGIF" src="assets/images/LogMachineInstall.gif"/>
+                            </div>
+                        </div>
+                        
+                        <br/>
+                        
+                        <div class="row">
+                            <h3 class="sub-title text-center">Step 3</h3>
+                            <br/>
+                            <br/>
+                            <div class="col-lg-4">
+                                
+                                <img  class="getStartedGIF" src="assets/images/LogMachineDebugLog.gif"/>
+                            </div>
+                            
+                            <div class="col-lg-8">
+                                After the installation is complete, login to your Salesforce Org and Search for Debug Log in the Quick Search, open the Debug Log.
+                            </div>
+                        </div>
+                        
+                        <br/>
+                        
+                        <div class="row">
+                            <h3 class="sub-title text-center">Step 4</h3>
+                            <br/>
+                            <br/>
+                            <div class="col-lg-4">
+                                
+                                You can now see for yourself the the Log Summary looks more vibrant and informative now, 
+                                when you dig in to see the detailed log you can see the key context of the Log being highlighted and is more readable now.
+                            </div>
+                            
+                            <div class="col-lg-8">
+                                
+                                
+                                <img  class="getStartedGIF" src="assets/images/LogMachineDebugLogCheck.gif"/>
+                            </div>
+                        </div>
+                        
+                        
+                    </div><!--//block-->
+                </div><!--//docs-inner-->         
+            </div><!--//container-->
+        </section><!--//features-->
+        
+       
+        <!-- ******CONTACT****** --> 
+        <section id="contact" class="contact section has-pattern">
+            <div class="container">
+                <div class="contact-inner">
+                    <h2 class="title  text-center">Contact</h2>
+                    <p class="intro  text-center">I hope you find this Plugin useful. <br />Feel free to get in touch if you have any questions or suggestions.</p>
+                    <div class="author-message">                      
+                        <div class="profile">
+                            <img class="img-responsive" src="assets/images/profile.jpg" alt="" />
+                        </div><!--//profile-->
+                        <div class="speech-bubble">
+                            <h3 class="sub-title">Want to get more freebies in the future?</h3>
+                            
+                            <p>I am a Software Developer and like creating smart/automated tools which make life of Developers/Users a hell lot easier</p>
+                            <p>If you like my work and want to be informed about my next tools and accelerators, please send me a note by clicking on the Mail icon below.</p> 
+                            <div class="source">
+                                <span class="name"><a href="https://iamgourav.xyz/" target="_blank">Gourav Bhardwaj</a></span>
+                                <br />
+                                <span class="title">SFDC/Web Developer</span>
+                            </div><!--//source-->
+                            
+                            <div class="alert alert-success" style="display:none;margin-top: 26px;" id="sucessMessage" role="alert">
+                                <i class="fa fa-thumbs-up" aria-hidden="true"></i> Thanks for Your Comment, will keep in Touch.
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        
+                    </div><!--//author-message-->
+                    <div class="clearfix"></div>
+                    <div class="info text-center">
+                        <h4 class="sub-title">Get Connected</h4>
+                        <ul class="social-icons list-inline">
+                            <li><a href="https://twitter.com/Gouravrocks247" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://www.facebook.com/iamcursed13" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="linkedin.com/in/gourav-bhardwaj-76310a60"><i class="fa fa-linkedin"></i></a></li>
+                            <!-- <li><a href="http://instagram.com/xyriley"><i class="fa fa-instagram"></i></a></li>  
+<li><a href="https://dribbble.com/Xiaoying"><i class="fa fa-dribbble"></i></a></li>    -->
+                            <!-- <li class="last"><a target="#contactUdModal"><i class="fa fa-envelope"></i></a></li>  -->
+                            <li class="last"> <button type="button"  id="mailButton" data-toggle="modal" data-target="#contactUdModal">
+                                
+                                <i class="fa fa-envelope"></i> </button> </li>
+                        </ul>
+                        
+                        
+                        
+                    </div><!--//info-->
+                </div><!--//contact-inner-->
+            </div><!--//container-->
+        </section><!--//contact-->  
+        
+        <!--Contact Us and Subscription Form using Bootstrap Modal -->
+        <div id="contactUdModal" class="modal fade"  style="top: 149px" role="dialog">
+            <div class="modal-dialog">
+                
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Get in touch</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Send me your Feedbacks/Queries.</p>
+                        
+                        
+                        <form id="feedbackForm">
+                            <div class="form-group">
+                                
+                                <input data-validation='required' data-requiredMessage='Please Enter a valid EmailAddress' type="email" class="form-control" id="emailAddress" placeholder="Email"/>
+                                
+                                <div class="alert alert-danger" style="display:none" id="emailError" role="alert">
+                                    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                                    <span class="sr-only">Error:</span>
+                                    Enter a valid email address
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                
+                                <input data-validation='required' data-requiredMessage='Please Enter You Name' type="text" class="form-control" id="name" placeholder="Name"/>
+                                
+                                <div class="alert alert-danger" style="display:none" id="nameError" role="alert">
+                                    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                                    <span class="sr-only">Error:</span>
+                                    Please enter your Name too.
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" data-validation='required' data-requiredMessage='Also enter a Comment..' rows="3" id="comment" placeholder="Your comments ...">
+                                </textarea>
+                                
+                                <div class="alert alert-danger" style="display:none" id="commentError" role="alert">
+                                    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                                    <span class="sr-only">Error:</span>
+                                    Enter Some comment also..
+                                </div>
+                            </div>
+                            
+                            <button type="button" id="sendButton" class="btn btn-primary">Send</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        
+        <!-- ******FOOTER****** --> 
+        <footer class="footer">
+            <div class="container text-center">
+                <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
+                <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="https://iamgourav.xyz/" target="_blank">Gourav Bhardwaj</a> for developers</small>
+            </div><!--//container-->
+        </footer><!--//footer-->
+        
+        <!-- Javascript -->          
+        <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>   
+        <script type="text/javascript" src="assets/plugins/jquery.easing.1.3.js"></script>   
+        <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>     
+        <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script> 
+        <script type="text/javascript" src="assets/plugins/prism/prism.js"></script>    
+        <script type="text/javascript" src="assets/js/main.js"></script>  
+        
+        
+        <script>
+        $(document).ready(function(){
+            
+            $('#sendButton').click(function(){
+                console.log(this);
+                $('#emailError').css('display','none');
+                $('#nameError').css('display','none');
+                $('#commentError').css('display','none');
+                $('#sucessMessage').css('display','none');
+                
+                
+                
+                var emailAddress = $('#emailAddress').val();
+                var name  = $('#name').val();
+                var comment = $('#comment').val();
+                var isError = false;
+                if(emailAddress=='' || emailAddress.indexOf('@')<0){
+                    $('#emailError').css('display','block');
+                    isError = true;
+                }
+                
+                if(name=='' ){
+                    $('#nameError').css('display','block');
+                    isError = true;
+                }
+                
+                if(comment==' ' ){
+                    $('#commentError').css('display','block');
+                    isError = true;
+                }                     
+                
+                var context = {
+                    name : name,
+                    emailAddress : emailAddress,
+                    comments : comment
+                };
+                
+                if(!isError){
+				
+				/*
+				
+                    Visualforce.remoting.Manager.invokeAction(
+                        '{!$RemoteAction.LogMachineController.collectFeedbackQuery}',
+                        context,
+                        function(result,event){
+                            console.log(result);
+                            
+                            if(result=='success'){
+                                
+                                $('#contactUdModal').modal('hide');
+                                
+                                $('#sucessMessage').css('display','block');
+                            }
+                            
+                        });
+				*/
+				
+                }
+                
+            });
+            
+        });
+        
+        </script>
+        
+    </body>
+    
+    
+</html>
