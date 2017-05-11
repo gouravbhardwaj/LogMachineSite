@@ -1,0 +1,23 @@
+{
+  "name": "logmachine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start" : "server.js"
+  },
+  "dependencies" : {
+    "ejs": "~1.0.0",
+    "express": "~4.9.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gouravbhardwaj/LogMachineWebsite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gouravbhardwaj/LogMachineWebsite/issues"
+  },
+  "homepage": "https://github.com/gouravbhardwaj/LogMachineWebsite#readme"
+}
