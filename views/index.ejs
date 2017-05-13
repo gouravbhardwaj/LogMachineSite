@@ -422,11 +422,17 @@ allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"><
                         <p>Send me your Feedbacks/Queries.</p>
                         
                         
-                        <form id="feedbackForm">
+                        <form id="feedbackForm" action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+
+<input type=hidden name="oid" value="00D90000000vFpd">
+<input type=hidden name="retURL" value="http://localhost:5000?state=success">
+
                             <div class="form-group">
                                 
-                                <input data-validation='required' data-requiredMessage='Please Enter a valid EmailAddress' type="email" class="form-control" id="emailAddress" placeholder="Email"/>
+                               
+                                 <input id="email" maxlength="80" name="email" size="20" type="text" class="form-control" data-validation='required' data-requiredMessage='Please Enter a valid EmailAddress' placeholder="Email" type="email" />
                                 
+                              
                                 <div class="alert alert-danger" style="display:none" id="emailError" role="alert">
                                     <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
                                     <span class="sr-only">Error:</span>
@@ -435,7 +441,9 @@ allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"><
                             </div>
                             <div class="form-group">
                                 
-                                <input data-validation='required' data-requiredMessage='Please Enter You Name' type="text" class="form-control" id="name" placeholder="Name"/>
+                               
+                                 <input class="form-control" data-validation='required' data-requiredMessage='Please Enter You Name' type="text" id="first_name" maxlength="40" name="first_name" placeholder="Name" size="20" type="text" />
+                                
                                 
                                 <div class="alert alert-danger" style="display:none" id="nameError" role="alert">
                                     <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
@@ -444,8 +452,8 @@ allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"><
                                 </div>
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control" data-validation='required' data-requiredMessage='Also enter a Comment..' rows="3" id="comment" placeholder="Your comments ...">
-                                </textarea>
+                               
+                                <textarea name="description" class="form-control" data-validation='required' data-requiredMessage='Also enter a Comment..' rows="3" id="comment" placeholder="Your comments ..."></textarea>
                                 
                                 <div class="alert alert-danger" style="display:none" id="commentError" role="alert">
                                     <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
@@ -454,8 +462,9 @@ allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"><
                                 </div>
                             </div>
                             
-                            <button type="button" id="sendButton" class="btn btn-primary">Send</button>
+                            <input type="submit" id="sendButton" name="submit" class="btn btn-primary">
                         </form>
+
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
@@ -487,7 +496,7 @@ allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"><
         <script>
         $(document).ready(function(){
             
-            $('#sendButton').click(function(){
+            $('#feedbackForm').submit(function(){
                 console.log(this);
                 $('#emailError').css('display','none');
                 $('#nameError').css('display','none');
@@ -496,8 +505,8 @@ allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"><
                 
                 
                 
-                var emailAddress = $('#emailAddress').val();
-                var name  = $('#name').val();
+                var emailAddress = $('#email').val();
+                var name  = $('#first_name').val();
                 var comment = $('#comment').val();
                 var isError = false;
                 if(emailAddress=='' || emailAddress.indexOf('@')<0){
@@ -541,6 +550,9 @@ allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"><
                         });
 				*/
 				
+                }else{
+
+                    return false;
                 }
                 
             });
