@@ -62,7 +62,7 @@
             background-repeat: no-repeat;
             background-position: bottom;
             background-size: 67% 323px;
-            background-image: url(/LogMachine/resource/1492237619000/crontec__LogMachineAsset/assets/images/LogWallpaper.jpg);
+          /*  background-image: url('assets/images/LogWallpaper.jpg'); */
             }
             
             #mailButton{
@@ -95,6 +95,25 @@
                  font-size: 16px;
             }
             }
+
+            #iconImage {
+                width: 46px;
+            }
+            .imageURL {
+
+                width: 46px;
+                float: left;
+                margin-right: 10px;
+            }
+            .iconImageClass{
+                width: 240px;
+                height: 58px;
+            }
+
+            .logo-title{
+                height: 55px;
+                padding-top: 15px;
+            }
         </style>
         
     </head> 
@@ -111,7 +130,8 @@
             <div class="container">            
                 <h1 class="logo pull-left">
                     <a class="scrollto" href="#">
-                        <span class="logo-title">LogMachine</span>
+                      <div class="iconImageClass"> <div class="imageURL"> <img id="iconImage" src="assets/images/Icon.png"> </div>
+                      <div class="logo-title">LogMachine</div> </div>
                     </a>
                 </h1><!--//logo-->              
                 <nav id="main-nav" class="main-nav navbar-right" role="navigation">
@@ -425,7 +445,7 @@ allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"><
                         <form id="feedbackForm" action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
 
 <input type=hidden name="oid" value="00D90000000vFpd">
-<input type=hidden name="retURL" value="www.logmachine.xyz?success=true">
+<input type=hidden name="retURL" value="www.logmachine.xyz?success=true#contact">
 
                             <div class="form-group">
                                 
